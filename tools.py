@@ -4,7 +4,7 @@ from pyESN.pyESN import ESN
 
 def MSE(yhat, y):
     '''
-    This function calculates the mean squared error between
+    This function calculates the root mean squared error between
     a predicted and target vector.
 
     Parameters:
