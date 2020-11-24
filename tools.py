@@ -24,6 +24,17 @@ def MSE(yhat, y):
     return mse
 
 
+def update_params(xval, xvar, params):
+    """
+    This function creates a list of parameter
+    dictionaries for multiprocessing.
+    """
+    new_params = params.copy()
+    new_params[xvar] = xval
+
+    return new_params
+
+
 def param_string(params):
     """
     This function generates a formatted string from
