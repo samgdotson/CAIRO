@@ -47,7 +47,8 @@ params = {'n_reservoir': 1000,
 VARIABLES = {
     'solarfarm': 'Solar Generation',
     'railsplitter': 'Wind Generation',
-    'demand': 'Demand'}
+    'demand': 'Demand',
+    'netdemand':'Net Demand'}
 
 
 def main():
@@ -60,10 +61,14 @@ def get_variable_name(fname):
     the name of a variable.
     """
 
-    variables = ['demand', 'solarfarm', 'railsplitter']
+    variables = ['demand', 'solarfarm', 'railsplitter', 'netdemand']
     split_str = fname.split('/')
+    print(split_str)
     file_name = split_str[-1]
-    pieces = file_name.split('_')
+    print(file_name)
+    drop_csv = file_name.strip('.csv')
+    pieces = drop_csv.split('_')
+    print(pieces)
 
     for p in pieces:
         if any(p in var for var in variables):
@@ -260,6 +265,10 @@ if __name__ == "__main__":
 # =============================================================================
 # Visualize Training Length Loss
 # =============================================================================
+    target_folder = "./figures/"
+    if not os.path.isdir(target_folder):
+        os.mkdir(target_folder)
+
 
     plt.plot(trainingLengths, trainlen_loss, '-ok', alpha=0.6)
     plt.title(f'MSE as a Function of Training Length', fontsize=20)

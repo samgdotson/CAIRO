@@ -1,0 +1,8 @@
+==========================================
+Metadata for [48_netdemand_elevation]
+Reservoir Size:600, Sparsity: 0.2, Spectral Radius: 0.5, Noise: 0.0007, Training Length: 5900, Prediction Window: 48
+Random state: 85
+Optimized prediction took: 1.1238252949988237 seconds
+Mean Absolute Error: 0.03626751690304059
+Root Mean Squared Error: 0.04626469838764891
+
