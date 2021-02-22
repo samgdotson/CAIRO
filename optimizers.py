@@ -105,7 +105,7 @@ def grid_optimizer(
 
         else:
             predicted = esn_prediction(data, params)
-            loss[x] = MSE(predicted, data[-predictLen:])
+            loss[x] = MSE(predicted.T, data[-predictLen:].T)
 
             if verbose:
                 print(f"{xvar} = {xvalue}, MSE={loss[x]}")
