@@ -397,4 +397,4 @@ if __name__ == "__main__":
     # data = {'Time':dates, 'angle':elevation}
     # df = pd.DataFrame(data)
     # print(df)
-    # df.to_csv('solar_elevation_demand.csv')
+    # df.to_csv('./data/solar_elevation_demand.csv')
