@@ -1,8 +1,8 @@
 import pytest
 import numpy as np
 import numpy.random as rd
-from tools import MSE, optimal_values, esn_prediction
-from optimizers import grid_optimizer
+from cairo.tools import MSE, optimal_values, esn_prediction
+from cairo.optimizers import grid_optimizer
 
 # =========================================================
 # Set up code

@@ -1,4 +1,4 @@
-from sunrise import *
+from cairo.sunrise import *
 import numpy as np
 from pytest import approx
 

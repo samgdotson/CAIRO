@@ -1,4 +1,4 @@
-from lorenz import *
+from cairo.lorenz import *
 import numpy as np
 from pytest import approx
 from scipy.integrate import odeint

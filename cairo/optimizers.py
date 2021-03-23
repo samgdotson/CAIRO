@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
-from tools import MSE, optimal_values, esn_prediction
+from cairo.tools import MSE, optimal_values, esn_prediction
 from pyESN.pyESN import ESN
 
 variables = {'n_reservoir': 'Reservoir Size',
