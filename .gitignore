@@ -28,3 +28,4 @@ arfc-pres.ist
 .DS_Store
 hidden_images/
 ./publications/forecasting-paper/main.ist
+cairo/__pycache__/
