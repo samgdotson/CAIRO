@@ -1,7 +1,7 @@
 import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
+#from mpl_toolkits.mplot3d import Axes3D
 from scipy.integrate import odeint
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
 def lorenz96(x, t, N=5, F=8):

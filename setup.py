@@ -3,7 +3,7 @@ from setuptools import setup
 import io
 import os
 
-from pyrk.ver import get_git_version
+from tarot.ver import get_git_version
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -21,24 +21,21 @@ def read(*filenames, **kwargs):
 long_description = read('README.md', 'contributing.md')
 
 setup(
-   name='cairo',
-   version=get_git_version(),
-   url='http://github.com/arfc/cairo/',
+   name='tarot',
+   # version=get_git_version(),
+   version="0.1.0",
+   url='http://github.com/arfc/tarot/',
    license='BSD 3-Clause License',
    author='Samuel G. Dotson',
    tests_require=['pytest'],
    author_email='samgdotson@gmail.com',
-   description='AI-assisted reactor operation and deployment.',
+   description='Transient Reactor Operator',
    long_description=long_description,
-   packages=['cairo',
-             'cairo.lorenz'
-             'cairo.optimizers',
-             'cairo.sunrise',
-             'cairo.tools',
+   packages=['tarot',
              ],
    include_package_data=True,
    platforms='any',
-   test_suite='pyrk.test.test_pyrk',
+   # test_suite='cairo.tests',
    classifiers=[
        'Development Status :: 1 - Planning',
        'Intended Audience :: Education',
@@ -52,7 +49,4 @@ setup(
        'Topic :: Scientific/Engineering :: Physics',
        'Topic :: Software Development :: Libraries :: Python Modules',
    ],
-   extras_require={
-       'testing': ['nose'],
-   }
 )
